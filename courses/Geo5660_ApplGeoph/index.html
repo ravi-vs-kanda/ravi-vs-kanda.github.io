@@ -4,24 +4,48 @@
 <!---------------------------------------------------------------------->
 <HEAD>
 <STYLE>
-table#t01 {
-table-layout:fixed;  
-  width: 100%;
-  border: 0px solid white;
-  background-color: #ffffff;
+DIV#d01 {
+  text-indent: 95px;
 }
-th, td {
+DIV#d02 {
+  text-indent: 100px;
+}
+TABLE#t01 {
+  table-layout:fixed;  
+  width: 100%;
+  background-color: #ffffff;
+  border: 0px solid white;
+}
+TD, TR {
   border: 0px solid white;
   padding: 5px;
 }
-th {
+TD {
+  text-align: center;
+  line-height: 0px
+}
+TD:hover {
+  background-color: #f5f5f5;
+}
+TR {
   text-align: center;
 }
-td {
-  text-align: center;
+UL {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
 }
-div#d01 {
-  text-indent: 75px;
+LI {
+  float: center;
+}
+LI a {
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
 </STYLE>
 </HEAD>
@@ -58,17 +82,19 @@ div#d01 {
         <DT><A HREF="lectures/Lecture01_Jan06.html" ><B>Lecture 1</B></A>: Introduction. Seismic Waves - reflection, refraction, diffraction; Travel-time curves; Tomography
         <BR><BR>
         <DT><B>Lecture 2</B>: Scope of Geophysics; Careers in Geophysics; Geophysical Imaging - Focus of this course; 
-        <BR>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Wave reflection - Huygens' & Fermat's Principles.
-        <BR><BR>
-        <DT><B>Lecture 3</B>: Huygens' & Fermat's Principles Revisited; Reflection of a Wavefront; Refraction of a Wavefront; Snell's Law; P- & S-wave angles.
+        <BR><DIV id="d01" >Wave reflection - Huygens' & Fermat's Principles.</DIV>
         <BR>
-        <table id="t01">
-        <tr>
-            <td><div id="d01" >Dry Erase Board Snapshots (JPG): </div></td>
-            <td><A HREF="Lectures/figures_images/Waves_Reflection.jpg" target="_blank"> Board 1: Reflection</A></td>
-            <td><A HREF="Lectures/figures_images/Waves_Refraction.jpg" target="_blank"> Board 2: Refraction</A></td>
-        </tr>
-        </table> 
+        <DT><B>Lecture 3</B>: Huygens' & Fermat's Principles Revisited; Reflection of a Wavefront; Refraction of a Wavefront; 
+        <BR><DIV id="d01" >Snell's Law; P- & S-wave velocities & angles.</DIV>
+        <UL>
+            <LI><TABLE id="t02">
+            <TR>
+                <TD><DIV id="d02" ><B><I>Dry Erase Board Snapshots (JPG): </I></B></DIV></TD>
+                <TD><A HREF="lectures/figs_imgs/Waves_Reflection.jpg" target="_blank"> <B><I>Board 1: Reflection</B></I></A></TD>
+                <TD><A HREF="lectures/figs_imgs/Waves_Refraction.jpg" target="_blank"> <B><I>Board 2: Refraction</B></I></A></TD>
+            </TR>
+            </TABLE></LI>
+        </UL>
         <BR><BR>
     </DL>
     <BR>
