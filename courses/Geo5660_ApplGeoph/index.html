@@ -8,23 +8,47 @@ DIV#d01 {
   text-indent: 95px;
 }
 DIV#d02 {
-  text-indent: 100px;
+  text-indent: 45px;
+}
+DIV#d03 {
+  text-indent: 150px;
+}
+DIV#d04 {
+  background-color: #ff0000;
+  color: white
+}
+DIV#d05 {
+  background-color: #33aaff;
+  color: white
+}
+DIV#d06 {
+  color: yellow
 }
 TABLE#t01 {
   table-layout:fixed;  
   width: 100%;
+  margin: 5px;
   background-color: #ffffff;
   border: 0px solid white;
 }
 TD, TR {
   border: 0px solid white;
-  padding: 5px;
+  padding: 0px;
 }
-TD {
-  text-align: center;
+TD#r01 {
+  text-align: left;
+  vertical-align: center;
   line-height: 0px
 }
-TD:hover {
+TD#r01:hover {
+  background-color: #f5f5f5;
+}
+TD#r02 {
+  text-align: left;
+  vertical-align: center;
+  line-height: 0px
+}
+TD#r02:hover {
   background-color: #f5f5f5;
 }
 TR {
@@ -42,9 +66,9 @@ LI {
 }
 LI a {
   display: block;
-  color: red;
+  color: blue;
   text-align: center;
-  padding: 16px;
+  padding: 10px;
   text-decoration: none;
 }
 </STYLE>
@@ -53,7 +77,7 @@ LI a {
 <BODY>
 <TITLE>USU GEO 5660/6660: Applied Geophysics</TITLE>
 <H1>GEO 5660/6660: Applied Geophysics</H1>
-<DL><p>
+<DL>
     <DT><H2>Syllabus &amp Pre-requisites</H2>
     <HR>
     <DL>
@@ -66,16 +90,22 @@ LI a {
         Program, Course, &amp Pre-requisites:<BR>
         <DT><A HREF="https://catalog.usu.edu/preview_program.php?catoid=12&poid=9507&returnto=3829#tt1400" target="_blank" >USU Program: Geology - BA, BS</A>
         <DT><A HREF="https://catalog.usu.edu/preview_course_nopop.php?catoid=12&coid=89756" target="_blank" >Catalog: GEO 5660/6660 - Applied Geophysics</A>
-            <BR><BR>
-        <DT><A HREF="https://catalog.usu.edu/preview_course_nopop.php?catoid=12&coid=90558" target="_blank" >Pre-req: MATH 1210 - Calculus I (QL) </A>
-        <DT><A HREF="https://catalog.usu.edu/preview_course_nopop.php?catoid=12&coid=91500" target="_blank" >Pre-req: PHYS 2210 - Physics for Scientists and Engineers I (BPS/QI) </A>
-        <DT><A HREF="https://catalog.usu.edu/preview_course_nopop.php?catoid=12&coid=91502" target="_blank" >Pre-req: PHYS 2220 - Physics for Scientists and Engineers II (BPS/QI) </A>
+        <DT><A HREF="http://aconcagua.geol.usu.edu/%7Earlowry/AppGeo/index.html" target="_blank" >Applied Geophysics - 2018 Course Pages</A> (Tony Lowry)
         <BR><BR>
         <DT><A HREF="https://catalog.usu.edu/content.php?catoid=12&navoid=17982" target="_blank">Finals Schedule</A> (Course Catalog)
     <HR>
     <BR>
     </DL>
-    <p>
+    <DT><H2>Homework Assignments & Quizzes</H2>
+    <HR>
+    <DL>
+        <DIV id="d05"><DT><B><A HREF="">HW #1</A></B>: <B> <DIV id="d06">Due: Tuesday, January 28th, 3 PM </DIV></B> (Beginninng of Lab!)</DIV>
+        <P>
+        <DIV id="d04"><DT><B><A HREF="">QUIZ #1</A></B>: <B> <DIV id="d06">Tuesday, January 28th, 3 PM </DIV></B> (max. 1 hr)</DIV>
+        <P>
+    </DL>
+    <HR>
+    <BR>
     <DT><H2>Lectures/Notes</H2>
     <HR>
     <DL>
@@ -87,15 +117,51 @@ LI a {
         <DT><B>Lecture 3</B>: Huygens' & Fermat's Principles Revisited; Reflection of a Wavefront; Refraction of a Wavefront; 
         <BR><DIV id="d01" >Snell's Law; P- & S-wave velocities & angles.</DIV>
         <UL>
-            <LI><TABLE id="t02">
+            <LI><TABLE id="t01">
             <TR>
-                <TD><DIV id="d02" ><B><I>Dry Erase Board Snapshots (JPG): </I></B></DIV></TD>
-                <TD><A HREF="lectures/figs_imgs/Waves_Reflection.jpg" target="_blank"> <B><I>Board 1: Reflection</B></I></A></TD>
-                <TD><A HREF="lectures/figs_imgs/Waves_Refraction.jpg" target="_blank"> <B><I>Board 2: Refraction</B></I></A></TD>
+                <TD id="r01"><A HREF="lectures/figs_imgs/Waves_Reflection.jpg" target="_blank"> <B><I>Reflection</B></I></A></TD>
+                <TD id="r01"><A HREF="lectures/figs_imgs/Waves_Refraction.jpg" target="_blank"> <B><I>Refraction</B></I></A></TD>
+                <TD id="r01"><A HREF="" target="_blank"> <B><I>   </B></I></A></TD>
             </TR>
             </TABLE></LI>
         </UL>
+        <DT><B>Lecture 4</B>: Introduction to the wave equation (Derivation of 1D, Cartesian version) - general solutions, wave velocity
         <BR><BR>
+        <DT><B>Lecture 5/Lab 1</B>: 1D-Cartesian wave equation & characteristic solutions revisited; Wave energy in terms of Amplitude & Frequency;
+        <BR><DIV id="d03" >1D-Spherical wave equation - 1/r reduction in amplitude and 1/r<SUP>2</SUP> reduction in radiated energy.</DIV>
+        <UL>
+            <LI><TABLE id="t01">
+            <TR>
+                <TD id="r01"><A HREF="lectures/figs_imgs/WaveEqn_Cartesian.jpg" target="_blank"> <B><I>Cartesian 1-D wave equation</B></I></A></TD>
+                <TD id="r01"><A HREF="lectures/figs_imgs/WaveEqn_Cartesian_Solutions.jpg" target="_blank"> <B><I>Cartesian 1-D wave equation Solutions</B></I></A></TD>
+                <TD id="r01"><A HREF="lectures/figs_imgs/WaveEqn_Spherical_Solutions.jpg" target="_blank"> <B><I>Spherical 1-D wave equation </B></I></A></TD>
+            </TR>
+            </TABLE></LI>
+        </UL>
+        <DIV id="d01" >LAB: Snell's Law applied to incident P-/S-waves; Spread-sheet calculations to reproduce Fig 2.15(b)-(e) & Table 2.3 of Text.</DIV>
+        <UL>
+            <LI><TABLE id="t01">
+            <TR>
+                <TD><A HREF="lectures/Lecture05_Lab1.pdf" target="_blank"> <B><I> Snell's Law Application: Slides </B></I></A></TD>
+                <TD><A HREF="codes/SnellsLawCalcs.xlsx" target="_blank"> <B><I> Snell's Law Application: XLS </B></I></A></TD>
+                <TD><A HREF="" target="_blank"> <B><I>   </B></I></A></TD>
+            </TR>
+            </TABLE></LI>
+        </UL><BR>
+        <DT><B>Lecture 6</B>: 1D-Cartesian wave equation - Wave energy revisited; Review of Snell's Law & Critical Refraction
+        <BR><DIV id="d01" >Seismometer - introduction.</DIV>
+        <UL>
+            <LI><TABLE id="t01">
+            <TR>
+                <TD id="r01"><A HREF="lectures/figs_imgs/PlaneWaves_K-P-EnergyDensities.jpg" target="_blank"> <B><I>1-D plane S-wave Energy density</B></I></A></TD>
+                <TD id="r01"><A HREF="" target="_blank"> <B><I>   </B></I></A></TD>
+                <TD id="r01"><A HREF="" target="_blank"> <B><I>   </B></I></A></TD>
+            </TR>
+            </TABLE></LI>
+        </UL>
+        <DT><B>Lecture 7</B>: Seismometry - Introduction to damped oscillators (mechanical & electrical); Critical-/Over-/Under-damped systems; 
+        <BR><DIV id="d01" >Convolution Basics.</DIV>
+        <BR>
     </DL>
     <BR>
     <HR>
